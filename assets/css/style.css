@@ -1,11 +1,36 @@
+/* Import google fonts Oswald and Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+/* Override default styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #3a3a3a;
+    font-family: 'Lato', sans-serif;
+}
+
 /* Header */
 header {
     background-color: lightcoral;
 }
 
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
 /* Main content */
 main {
     background-color: lightblue;
+    /* Make the main content section grow to take up the space left over from the header and footer */
+    flex: 1 0 auto;
 }
 
 /* Footer */
